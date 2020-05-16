@@ -7,14 +7,14 @@
 			margin: 0;
 			padding: 0;
 			font-family: helvetica, arial, sans;
-			color: #fff;
+			color: #000;
+
 		}
 
 		.header{
 			background: #231F20;
 			height: 20vh;
 			width: 100%;
-			position: relative;
 			}
 
 			.brand-statement {
@@ -23,9 +23,7 @@
 				width: 430px;
 				height: 25px;
 				position: absolute;
-				top: 50%;
-				left: 33%;
-				margin: -10px
+				transform: translate(105%, 150%);
 				}
 				
 				
@@ -43,11 +41,11 @@
 
 				.main-logo img {
 
-					width: 100px;
-					height: 100px;
+					width: 18vh;
 					position: absolute;
-					left: 65px;
-				}
+					transform: translate(90%, 2%);
+
+					}
 
 
 						.content-header {
@@ -61,33 +59,37 @@
 						height: 10vh;
 					}
 
-					.content-header-2 {
+
+					/*.main-content {
 						width:100%;
     					
-    					}   
+    					}
     					
 
-						.content-header-2 > img {
+						.main-content > img {
 							min-width:100%;
 							min-height:40%;
-						}
+						}*/
 
 					.main-content {
 						background: #000;
-						background-image: url(bg2.jpg);
+						background-image: url(/images/obi.jpg);
 						background-size: cover;
-						height: 50vh;
+						height: 200vh;
 					}
 		
 					.general-wrapper {
 
 						background: #000;
 						height: 10vh;
+						position: relative;
 					}
 
 					.wrap-all-link {
 						float: right;
 						display: flex;
+						position: absolute;
+						transform: translate(800px);
 					}
 
 					.apply-links li {
@@ -97,18 +99,13 @@
 					}
 
 			
-					.wrap-all-link {
-
-						margin: 15px;
-						padding: 0;
-					}
-
-					
+									
 					.image-a img {
 
 						width: 30px;
 						margin-top: 2px;
 						margin-right: 15px;
+						transform: translate(0, 8px);
 					}
 
 
@@ -116,7 +113,8 @@
 
 						width: 30px;
 						margin-top: 2px;
-						margin-right:15px; 
+						margin-right:15px;
+						transform: translate(0, 8px); 
 					}
 
 
@@ -134,8 +132,7 @@
 						background: #FFCC00;
 						height: 58px;
 						width: 100%;
-						position: relative;
-						
+
 						}
 
 
@@ -143,16 +140,14 @@
 						color: #000;
 						display: inline-block;
 						position: absolute;
-						left: 5%;
+						transform: translate(43%);
 						}
 
 						.button {
 							display: inline-block;
 							position: absolute;
-							right: 6%;
-							top: 50%;
-							margin: -15.3px 0 0 -15.3px;
-						}
+							transform: translate(1200px, 10px);
+							}
 
 						
 					.button a {
@@ -178,32 +173,164 @@
 
 					}
 
-					.main-menu-wrapper {
-						background: red;
-					
-				}
+					.footer {
+						width: 100%;
+						background: #000;
+						color: #fff;
+						
+					}
 
-.department-and-all {
+					.footer-wrapper {
+						background: #000;
+						color: #fff;
+						font-size: 0.8em;
+						width: 100%;
+						display: flex;
 
-	background: red;
-}
+					}
 
-.department-and-all-reduced-margin {
+					.footer-menu {
+						line-height: 2em;
+						width: 18%;
+						padding: 20px;
+						margin: 5px auto 5px;
+						list-style: none;
 
-	background: green;
-	margin-left: 20px;
-	margin-right: 20px;
-	box-sizing: border-box;
+					}
 
 
-}
 
-.test {
-	width: 10px;
-	border: 1px solid #000;
+					li a {
+						text-decoration: none;
+						color: #fff;
+					}
 
-}
-					
+					.footer-menu li:first-child {
+						font-size: 1.5em;
+						line-height: 2em;
+					}
+
+					.footer-address {
+						text-align: right;
+						padding-top: 5px;
+						padding-right: 30px;
+						font-size: 1rem;
+						line-height: 1.5em;
+						
+					}
+
+					.footer-address span {
+						
+						font-size: 1rem;
+						line-height: 2em;
+					}
+
+					.footer-address a {
+						text-decoration: none;
+						color: #FFCC00;
+					}
+
+					.footer-address a:hover {
+						text-decoration: underline;
+					}
+
+					.info {
+						border-right: 1px;
+						border-style: solid;
+						border-color: #fff;
+						padding:5px;
+						font-size: 1rem;
+						}
+
+						.contact-info a {
+							color: #fff;
+							font-size: 1rem;
+
+
+						}
+
+						.contact-info span {
+
+							color: #ffcc00;
+							padding-right: 2px;
+						}
+
+						.bottom-logos {
+							background: #000;
+							padding-top: 20px;
+							padding-bottom: 10px;
+							position: relative;
+							display: flex;
+
+						}
+
+						.ta-logo img {
+						width: 28vh;
+						/*border: 1px solid #fff;*/
+						transform: translate(30%);
+
+						}
+
+						.frontmatters-logo img {
+							width: 35vh;
+							/*border: 1px solid #fff;*/
+							transform: translate(95%);
+						}
+
+						.CJW-logo img {
+							width: 25vh;
+							/*border: 1px solid #fff;*/
+							transform: translate(230%);
+						}
+
+						.social-media-logos-wrapper {
+							transform: translate(80%, 25%);
+
+						}
+
+						.social-media-links li {
+							display: inline-block;
+							font-size: 1.5em;
+							color: #000;
+							height: 40px;
+							width: 40px;
+							margin-right: 15px;
+							box-sizing: border-box;
+							padding-top: 3px;
+							padding-left: 5px;
+							border-radius: 50px;
+							text-decoration: none;
+						}
+
+						.facebook {
+							background: #3B5998;
+						}
+
+						.twitter {
+							background: #1C9CEA;
+						}
+
+						.linkedIn {
+							background: #2593C8;
+						}
+
+						.instagram {
+							background: #C5007C;
+						}
+
+						.youtube {
+							background: #F70000;
+						}
+
+						.pinterest {
+							background: #DF0022;
+						}
+
+						.snapchat {
+							background: #F7F401;
+						}
+
+											
 
 						
 				
@@ -218,12 +345,9 @@
 </div>
 	<div class="header">
 		<div class="brand-statement"><a href="https://justwebandsoftwaredevelopment.github.io/frontmatters"><strong>Frontmatters</strong> is now a part of <strong>Taahira Aamal</strong></a></div>
-		<div class="main-logo"><a href="#"><img src="ta-logo.png"></a></div>
+		<div class="main-logo"><a href="#"><img src="/images/ta-logo.png"></a></div>
 	</div>
 		
-	
-	<!--<div class="content-header">
-	</div>
 	<div class="general-wrapper">
 		<div class="wrap-all-link">
 
@@ -236,31 +360,101 @@
 			</ul>
 		</div>
 		<div class="image-a">
-			<a href="#"><img src="lion.png"></a>
+			<a href="#"><img src="/images/lion.png"></a>
 		</div>
 		<div class="image-b">
-			<a href="#"><img src="search.png"></a>
+			<a href="#"><img src="/images/search.png"></a>
 		</div>
 	</div>
 </div>
-<div class="department-and-all">
-	<div class="department-and-all-reduced-margin">
-		<div class="test">Department</div>
-		<div class="test">Undergraduate</div>
-		<div class="test">Graduate</div>
-		<div class="test">Online Education</div>
-		<div class="test">Research</div>
-		<div class="test">Apply</div>
-	</div>
-</div>
-	<div>
-		<img src="obi.jpg" class="content-header-2">
-	</div>
-	<div 
-	class="main-content">
-	</div>
+<div class="main-content">
+		</div>
+<footer class='footer'>
+	<div class="footer-wrapper">
+	<ul class="footer-menu">
+		<li>Academics</li>
+		<li><a class="footer-menu-link" href="/">Undergraduates Admission</a></li>
+			<li><a class="footer-menu-link" href="/">Graduate Admissions</a></li>
+			<li><a class="footer-menu-link" href="/">International Admissions</a></li>
+<li><a class="footer-menu-link" href="/">Online Learning</a></li>
+<li><a class="footer-menu-link" href="/">Financial Aid</a></li>
+<li><a class="footer-menu-link" href="/">Library</a></li>
+<li><a class="footer-menu-link" href="/">Accreditation</a></li>
+	</ul>
+	<ul class="footer-menu">
+<li>People and Places</li>
+<li><a class="footer-menu-link" href="/">Alumni Profiles</a></li>
+    <li><a class="footer-menu-link" href="/"> Campus Map</a></li>
+    <li><a class="footer-menu-link" href="/">Campus Directory</a></li>
+    <li><a class="footer-menu-link" href="/">Events Calendar</a></li>
+    <li><a class="footer-menu-link" href="/">Jobs</a></li>
+    <li><a class="footer-menu-link" href="/">President's Council</a></li>
+    <li><a class="footer-menu-link" href="/">Webcams</li></a>
 
+</ul>
+	<ul class="footer-menu">
+<li>Support</li>
+<li><a class="footer-menu-link" href="/">Accessible Technology</a></li>
+    <li><a class="footer-menu-link" href="/">Equal Opportunity</a></li>
+    <li><a class="footer-menu-link" href="/">Human Resources</a></li>
+    <li><a class="footer-menu-link" href="/">Information Technology</a></li>
+    <li><a class="footer-menu-link" href="/">Institutional Equity</a></li>
+    <li><a class="footer-menu-link" href="/">Notice of Non-Discrimination</a></li>
+    <li><a class="footer-menu-link" href="/">Title IX</a></li>
+
+</ul>
+	<ul class="footer-menu">
+<li>Safety</li>
+<li><a class="footer-menu-link" href="/">Emergency Contacts</a></li>
+    <li><a class="footer-menu-link" href="/">Report a Concern</a></li>
+    <li><a class="footer-menu-link" href="/">Public Safety</a></li>
+    <li><a class="footer-menu-link" href="/">Safety Data Sheets</a></li>
+    <li><a class="footer-menu-link" href="/">Safety First Alert</a></li>
+    <li><a class="footer-menu-link" href="/">Student Disclosure</a></li>
+
+</ul>
+</div>
+<div class="footer-address">
+<span><a href="/">Web Designs and Development</a></span><br/>
+7, Awolusi Street, Bogije,<br/>
+Ibeju-Lekki,<br/>
+Lagos State, Nigeria, West Africa.<br/>
+<span class="contact-info"><a href="/" class="phone">Ph: 08177417941</a> <span>|</span> <a href="/" class="fax">Fax: 08139340023</a> <span>|</span>  <a href="/" class="email">justwebandsoftwaredevelopment@gmail.com</a></span><br/>
+	<a class="contact-info" href="/">Contact Us</a>
+	
+	</div>
+	<div class="bottom-logos">
+		<div class="ta-logo">
+		<a href="/"><img src="/images/ta-logo.png"></a>
+	</div>
+	<div class="frontmatters-logo">
+		<a href="/"><img src="/images/frontmatters.png"></a>
+	</div>
+	<div class="CJW-logo">
+		<a href="/"><img src="/images/CJW-logo.png"></a>
+	</div>
+	<div class="social-media-logos-wrapper">
+		<ul class="social-media-links">
+			<li class="facebook">FB
+			</li>
+			<li class="twitter">TW
+			</li>
+			<li class="linkedIn">LI
+			</li>
+			<li class="instagram">IN
+			</li>
+			<li class="youtube">UT
+			</li>
+			<li class="pinterest">PI
+			</li>
+			<li class="snapchat">SC
+			</li>
+		</ul>
+
+	</div>
+	</div>
 	
 
+	</footer>
 </body>
 </html>
